@@ -1,4 +1,4 @@
-@import "url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap)";
+@import url('url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap)');
 
 body {
   display: flex;
@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 5px solid #000000;
+  border: 5px solid #000;
   background-color: #0a19e9;
   width: 50%;
   height: 90%;
@@ -21,50 +21,51 @@ body {
 }
 
 .header {
-  color: #ffffff;
+  color: #fff;
   font-size: 42px;
   margin: 12px;
 }
 
 .count {
-  color: #ffffff;
+  color: #fff;
   font-size: 32px;
 }
 
 .choice {
-  color: #ffffff;
+  color: #fff;
   font-size: 24px;
   margin: 5px;
 }
 
 .count-head {
-  color: #ffffff;
+  color: #fff;
   font-size: 32px;
 }
 
 .game-btn {
   font-size: 32px;
-  color: #ffffff;
+  color: #fff;
   background-color: #425aac;
   border-radius: 4px;
 }
 
 .game-btn:active {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #3854b3;
 }
 
 .newgamebutton {
   background-color: #003cff;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   border: none;
   border-radius: 4px;
   font-size: 32px;
   padding: 0 65px;
-  margin: 12px 8px 32px 8px;
+  margin: 12px 8px 32px;
 }
+
 .newgamebutton:active {
   color: #003cff;
-  background-color: #ffffff;
+  background-color: #fff;
 }
