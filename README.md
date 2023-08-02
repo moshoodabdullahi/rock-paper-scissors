@@ -1,4 +1,4 @@
-# Project Name
+# ROCK PAPER SCISSORS
 
 > One paragraph statement about the project.
 
@@ -19,7 +19,7 @@
 - Clone the project
 
 ```bash
-git clone https://github.com/user/js-template.git
+git clone https://github.com/user/rock-paper-scissors.git
 
 ```
 
@@ -102,9 +102,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration, resources/assets used
-- etc
+- [The Odin Project](https://www.theodinproject.com/dashboard)
 
 ## 📝 License
 
