@@ -26,7 +26,7 @@ body {
   margin: 12px;
 }
 
-.count {
+.score {
   color: #fff;
   font-size: 32px;
 }
@@ -37,7 +37,7 @@ body {
   margin: 5px;
 }
 
-.count-head {
+.score-head {
   color: #fff;
   font-size: 32px;
 }
