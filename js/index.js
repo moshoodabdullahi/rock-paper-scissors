@@ -21,19 +21,19 @@ const calculateGame = (computerSelection, playerSelection) => {
     console.log('You Win!');
   } else if (computerSelection === 'Scissors' && playerSelection === 'Rock') {
     console.log('You Win!');
-    playerScore += 1
+    playerScore += 1;
   } else if (computerSelection === 'Paper' && playerSelection === 'Scissors') {
     console.log('You Win!');
-    playerScore += 1
+    playerScore += 1;
   } else if (computerSelection === 'Scissors' && playerSelection === 'Paper') {
     console.log('You Lose!');
-    computerScore += 1
+    computerScore += 1;
   } else if (computerSelection === 'Rock' && playerSelection === 'Scissors') {
     console.log('You Lose!');
-    computerScore += 1
+    computerScore += 1;
   } else if (computerSelection === 'Paper' && playerSelection === 'Rock') {
     console.log('You Lose!');
-    computerScore += 1
+    computerScore += 1;
   } else {
     console.log('Draw');
   }
