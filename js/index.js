@@ -41,7 +41,7 @@ const calculateGame = (computerSelection, playerSelection) => {
   console.info('computer:', computerScore);
 };
 
-function playGame(event) {
+const playGame = (event) => {
   if (playerScore >= 5 || computerScore >= 5) {
     return console.log('Click the New Game Button to Restart Game');
   }
@@ -66,7 +66,7 @@ paperButton.addEventListener('click', playGame);
 
 scissorsButton.addEventListener('click', playGame);
 
-function startNewGame() {
+const startNewGame = () => {
   playerScore = 0;
   computerScore = 0;
 }
