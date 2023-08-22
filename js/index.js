@@ -5,8 +5,10 @@ const rockButton = document.querySelector('#rock-button');
 const paperButton = document.querySelector('#paper-button');
 const scissorsButton = document.querySelector('#scissors-button');
 
-const playerChoice = document.querySelector('#player-choice');
-const computerChoice = document.querySelector('#computer-choice');
+const playerChoiceElement = document.querySelector('#player-choice');
+const computerChoiceElement = document.querySelector('#computer-choice');
+
+const gameOutcomeElement = document.querySelector('#game-outcome');
 
 const newGameButton = document.querySelector('#new-game-button');
 
@@ -50,6 +52,8 @@ const playGame = (event) => {
   const computerSelection = getComputerChoice();
   console.info('Player Chooses:', playerSelection);
   console.info('Computer Chooses:', computerSelection);
+  playerChoiceElement.textContent = playerSelection;
+  computerChoiceElement.textContent = computerSelection;
   calculateGame(computerSelection, playerSelection);
   checkWinner(computerScore, playerScore);
 };
