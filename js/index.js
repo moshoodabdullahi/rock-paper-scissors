@@ -56,9 +56,9 @@ const checkWinner = () => {
   if (playerScore >= 5) {
     console.log('Game End, You win');
   } else if (computerScore >= 5) {
-    console.log('Game End, You Lose. Computer Win')
+    console.log('Game End, You Lose. Computer Win');
   }
-}
+};
 
 rockButton.addEventListener('click', playGame);
 
