@@ -19,6 +19,7 @@ const getComputerChoice = () => {
 const calculateGame = (computerSelection, playerSelection) => {
   if (computerSelection === 'Rock' && playerSelection === 'Paper') {
     console.log('You Win!');
+    playerScore += 1;
   } else if (computerSelection === 'Scissors' && playerSelection === 'Rock') {
     console.log('You Win!');
     playerScore += 1;
@@ -35,7 +36,7 @@ const calculateGame = (computerSelection, playerSelection) => {
     console.log('You Lose!');
     computerScore += 1;
   } else {
-    console.log('Draw');
+    console.log('You Draw');
   }
   console.info('Player:', playerScore);
   console.info('computer:', computerScore);
@@ -50,6 +51,7 @@ const playGame = (event) => {
   console.info('Player Chooses:', playerSelection);
   console.info('Computer Chooses:', computerSelection);
   calculateGame(computerSelection, playerSelection);
+  checkWinner(computerScore, playerScore);
 };
 
 const checkWinner = () => {
