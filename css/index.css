@@ -35,7 +35,7 @@ body {
 .outcome {
   color: #fff;
   font-size: 24px;
-  margin-left: 8rem;
+  margin: auto 0;
 }
 
 .choice {
