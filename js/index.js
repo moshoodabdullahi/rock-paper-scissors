@@ -50,7 +50,7 @@ const playGame = (event) => {
   console.info('Player Chooses:', playerSelection);
   console.info('Computer Chooses:', computerSelection);
   calculateGame(computerSelection, playerSelection);
-}
+};
 
 const checkWinner = () => {
   if (playerScore >= 5) {
@@ -69,6 +69,6 @@ scissorsButton.addEventListener('click', playGame);
 const startNewGame = () => {
   playerScore = 0;
   computerScore = 0;
-}
+};
 
 newGameButton.addEventListener('click', startNewGame);
