@@ -42,11 +42,22 @@ const calculateGame = (computerSelection, playerSelection) => {
 };
 
 function playGame(event) {
+  if (playerScore >= 5 || computerScore >= 5) {
+    return console.log('Click the New Game Button to Restart Game');
+  }
   const playerSelection = event.target.textContent;
   const computerSelection = getComputerChoice();
   console.info('Player Chooses:', playerSelection);
   console.info('Computer Chooses:', computerSelection);
   calculateGame(computerSelection, playerSelection);
+}
+
+const checkWinner = () => {
+  if (playerScore >= 5) {
+    console.log('Game End, You win');
+  } else if (computerScore >= 5) {
+    console.log('Game End, You Lose. Computer Win')
+  }
 }
 
 rockButton.addEventListener('click', playGame);
@@ -56,10 +67,8 @@ paperButton.addEventListener('click', playGame);
 scissorsButton.addEventListener('click', playGame);
 
 function startNewGame() {
-  // const playerScore = 0
-  // const computerScore = 0
-  // console.info('Player Chooses:', playerScore);
-  // console.info('Computer Chooses:', computerScore);
+  playerScore = 0;
+  computerScore = 0;
 }
 
 newGameButton.addEventListener('click', startNewGame);
