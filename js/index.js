@@ -44,6 +44,14 @@ const calculateGame = (computerSelection, playerSelection) => {
   console.info('computer:', computerScore);
 };
 
+const checkWinner = () => {
+  if (playerScore >= 5) {
+    console.log('Game End, You win');
+  } else if (computerScore >= 5) {
+    console.log('Game End, You Lose. Computer Win');
+  }
+};
+
 const playGame = (event) => {
   if (playerScore >= 5 || computerScore >= 5) {
     return console.log('Click the New Game Button to Restart Game');
@@ -56,14 +64,6 @@ const playGame = (event) => {
   computerChoiceElement.textContent = computerSelection;
   calculateGame(computerSelection, playerSelection);
   checkWinner(computerScore, playerScore);
-};
-
-const checkWinner = () => {
-  if (playerScore >= 5) {
-    console.log('Game End, You win');
-  } else if (computerScore >= 5) {
-    console.log('Game End, You Lose. Computer Win');
-  }
 };
 
 rockButton.addEventListener('click', playGame);
