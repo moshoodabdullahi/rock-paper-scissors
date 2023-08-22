@@ -32,6 +32,12 @@ body {
   font-size: 32px;
 }
 
+.outcome {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 8rem;
+}
+
 .choice {
   color: #fff;
   font-size: 24px;
