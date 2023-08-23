@@ -1,6 +1,6 @@
 # ROCK PAPER SCISSORS
 
-> One paragraph statement about the project.
+> A Rock Paper Scissors project built using Math.random, Math.floor, eventListerner, if...else statement.
 
 ![screenshot](./app_screenshot.png)
 
