@@ -5,8 +5,11 @@ const rockButton = document.querySelector('#rock-button');
 const paperButton = document.querySelector('#paper-button');
 const scissorsButton = document.querySelector('#scissors-button');
 
-const playerChoiceElement = document.querySelector('#player-choice');
-const computerChoiceElement = document.querySelector('#computer-choice');
+const playerChoiceElement = document.querySelector('#player-choice-element');
+const computerChoiceElement = document.querySelector('#computer-choice-element');
+
+const playerScoreElement = document.querySelector('#player-score-element');
+const computerScoreElement = document.querySelector('#computer-score-element');
 
 const gameOutcomeElement = document.querySelector('#game-outcome');
 
@@ -49,6 +52,8 @@ const calculateGame = (computerSelection, playerSelection) => {
   }
   console.info('Player:', playerScore);
   console.info('computer:', computerScore);
+  playerScoreElement.textContent = playerScore;
+  computerScoreElement.textContent = computerScore;
 };
 
 const checkWinner = () => {
@@ -88,6 +93,8 @@ const startNewGame = () => {
   gameOutcomeElement.textContent = '';
   playerChoiceElement.textContent = '';
   computerChoiceElement.textContent = '';
+  playerScoreElement.textContent = 0;
+  computerScoreElement.textContent = 0;
 };
 
 newGameButton.addEventListener('click', startNewGame);

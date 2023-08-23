@@ -12,7 +12,6 @@
   "plugins": ["prettier"],
   "rules": {
     "no-console": "warn",
-    "no-unused-vars": "warn",
     "consistent-return": "warn"
   },
   "ignorePatterns": ["dist/", "build/", "axe-check.js"]
