@@ -1,9 +1,9 @@
 html {
-  font-size: 65%;
+  font-size: 75%;
 }
 
 body {
-  background-color: hsl(232deg 44% 17%);
+  background-color: hsl(230deg 45% 20%);
 }
 
 .header {
@@ -15,7 +15,7 @@ body {
   align-items: center;
   justify-content: space-between;
   transition: width 0.5s ease-in-out;
-  border: 4px solid hsl(219deg 14% 44%);
+  border: 4px solid hsl(220deg 15% 45%);
 }
 
 .sub-header {
@@ -25,10 +25,15 @@ body {
   font-size: 25px;
 }
 
+section {
+  position: relative;
+  margin-top: 8rem;
+}
+
 .container {
+  position: relative;
   border: 5px solid #fff;
-  position: absolute;
-  margin: auto;
+  width: 600;
 }
 
 .game-score {
@@ -55,24 +60,27 @@ body {
 }
 
 .game-container {
-  margin: 70px 42px 42px 44px;
+  margin: auto;
   position: relative;
+  display: flex;
 }
 
 .game-section {
+  margin: auto;
+  padding: 55px;
   position: relative;
 }
 
 .paper {
-  width: 13rem;
-  top: -7rem;
-  left: 30%;
+  top: 0;
+  right: 0;
   border-radius: 50%;
+  cursor: pointer;
   position: absolute;
   border: 30px solid #3554eb;
 }
 
-.paper:hover {
+.paper:active {
   transform: scale(1.2);
   transition-duration: 1s;
 }
@@ -86,16 +94,15 @@ body {
 }
 
 .scissors {
-  width: 13rem;
-  height: 13rem;
-  top: -6.5rem;
+  bottom: 0;
   right: 30%;
+  cursor: pointer;
   border-radius: 50%;
   position: absolute;
   border: 30px solid #ffa600;
 }
 
-.scissors:hover {
+.scissors:active {
   transform: scale(1.2);
   transition-duration: 1s;
 }
@@ -103,21 +110,20 @@ body {
 .scissors-background {
   width: 13rem;
   height: 13rem;
-  background-color: #fff;
   border-radius: 50%;
+  background-color: #fff;
 }
 
 .rock {
-  width: 13rem;
-  height: 13rem;
-  top: 15rem;
-  right: 40%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
   border-radius: 50%;
   position: absolute;
   border: 30px solid #ff002f;
 }
 
-.rock:hover {
+.rock:active {
   transform: scale(1.2);
   transition-duration: 0.4s;
 }

@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://abdullahi-rock-paper-scissors.netlify.app/)
 
 ### Development (Running locally)
 
@@ -102,7 +102,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [The Odin Project](https://www.theodinproject.com/dashboard)
+- [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
 
 ## 📝 License
 
