@@ -1,5 +1,5 @@
 html {
-  font-size: 75%;
+  font-size: 65%;
 }
 
 body {
@@ -32,7 +32,6 @@ section {
 
 .container {
   position: relative;
-  border: 5px solid #fff;
   width: 600;
 }
 
@@ -67,7 +66,7 @@ section {
 
 .game-section {
   margin: auto;
-  padding: 55px;
+  padding: 75px;
   position: relative;
 }
 
@@ -139,4 +138,14 @@ section {
   top: 25%;
   left: 30%;
   position: absolute;
+}
+
+@media (max-width >= 340px) {
+  html {
+    font-size: 30;
+  }
+
+  .game-section {
+    padding: 20px;
+  }
 }
