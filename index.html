@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -30,24 +29,24 @@
         </div>
       </header>
 
-      <main id="main">
-        <button class="btn-circle btn-paper" data-choice="paper">
+      <section class="play-game d-flex" id="play-game">
+        <button class="btn-circle btn-paper" id="paper-button" value="paper" type="button">
           <span class="wrapper"> <img src="./images/icon-paper.svg" alt="paper icon" /></span>
         </button>
-        <button class="btn-circle btn-scissors" data-choice="Scissors">
+        <button class="btn-circle btn-scissors" id="Scissors-button" value="scissors" type="button">
           <span class="wrapper"> <img src="./images/icon-scissors.svg" alt="Scissors icon" /></span>
         </button>
-        <button class="btn-circle btn-rock" data-choice="rock">
+        <button class="btn-circle btn-rock" 1d="rock-button" value="rock" type="button">
           <span class="wrapper"> <img src="./images/icon-rock.svg" alt="rock icon" /></span>
         </button>
-      </main>
+      </section>
 
       <button class="btn-rules">Rules</button>
     </div>
 
-    <div class="selection" id="selection">
+    <section class="game-result d-none" id="game-result">
       <div>
-        <h2>You Picked</h2>
+        <h2>Player Picked</h2>
         <button class="btn-circle btn-paper">
           <span class="wrapper"> <img src="./images/icon-paper.svg" alt="paper icon" /></span>
         </button>
@@ -60,11 +59,12 @@
         <button class="btn" id="reset">Play again</button>
       </div>
       <div>
-        <h2>The Computer Picked</h2>
+        <h2>Computer Picked</h2>
         <button class="btn-circle btn-rock">
           <span class="wrapper"> <img src="./images/icon-rock.svg" alt="rock icon" /></span>
         </button>
       </div>
-    </div>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

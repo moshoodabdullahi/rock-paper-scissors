@@ -67,7 +67,7 @@ h4 {
 }
 
 main {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -164,7 +164,7 @@ main::before {
 }
 
 .selection {
-  display: none;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;

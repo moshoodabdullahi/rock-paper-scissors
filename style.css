@@ -1,3 +1,4 @@
+/* stylelint-disable prettier/prettier */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;600;700&display=swap');
 
 * {
@@ -37,7 +38,6 @@ h1 {
 }
 
 h2 {
-  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -66,8 +66,7 @@ h4 {
   color: hsl(230deg 25% 30%);
 }
 
-main {
-  display: none;
+.play-game {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -77,7 +76,7 @@ main {
   position: relative;
 }
 
-main::before {
+.play-game::before {
   background-image: url('./images/bg-triangle.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,28 +155,26 @@ main::before {
   border-radius: 10px;
   background-color: #fff;
   color: hsl(229deg 25% 31%);
-  font-size: 20px;
+  font-size: 16px;
   font-family: inherit;
   padding: 10px 25px;
-  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-.selection {
-  display: flex;
+.game-result {
   justify-content: space-between;
   align-items: center;
   text-align: center;
   margin: 0 auto;
 }
 
-.selection .btn-circle {
+.game-result .btn-circle {
   margin: 30px;
   transform: scale(1.4);
 }
 
 .big-text {
-  font-size: 2rem;
+  font-size: 18px;
   margin: 0 0 20px;
   line-height: 0.8;
   text-transform: uppercase;
@@ -185,6 +182,32 @@ main::before {
 
 .text-container {
   padding: 12px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+@media only screen and (width >= 300px) {
+  .btn-circle {
+    border: none;
+    height: 90px;
+    width: 90px;
+  }
+
+  .btn-circle .wrapper {
+    height: 85px;
+    width: 85px;
+  }
+
+  .game-result {
+    width: 70%;
+    max-width: 70%;
+  }
 }
 
 @media only screen and (width >= 500px) {
@@ -199,14 +222,12 @@ main::before {
     width: 90px;
   }
 
-  .selection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  .game-result {
+    width: 70%;
+    max-width: 70%;
   }
 
-  .selection .btn-circle {
+  .game-result .btn-circle {
     margin: 30px;
     transform: scale(1.4);
   }
@@ -228,16 +249,12 @@ main::before {
     width: 120px;
   }
 
-  .selection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  .game-result {
     width: 75%;
     max-width: 75%;
   }
 
-  .selection .btn-circle {
+  .game-result .btn-circle {
     margin: 30px;
   }
 
@@ -254,23 +271,16 @@ main::before {
   }
 
   .btn-circle .wrapper {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     height: 120px;
     width: 120px;
   }
 
-  .selection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  .game-result {
     width: 70%;
     max-width: 70%;
   }
 
-  .selection .btn-circle {
+  .game-result .btn-circle {
     margin: 30px;
   }
 
@@ -287,23 +297,16 @@ main::before {
   }
 
   .btn-circle .wrapper {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     height: 120px;
     width: 120px;
   }
 
-  .selection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  .game-result {
     width: 60%;
     max-width: 60%;
   }
 
-  .selection .btn-circle {
+  .game-result .btn-circle {
     margin: 30px;
   }
 
@@ -327,16 +330,12 @@ main::before {
     width: 120px;
   }
 
-  .selection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  .game-result {
     width: 50%;
     max-width: 50%;
   }
 
-  .selection .btn-circle {
+  .game-result .btn-circle {
     margin: 30px;
   }
 
