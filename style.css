@@ -185,11 +185,11 @@ h4 {
 }
 
 .d-flex {
-  display: flex;
+  display: none;
 }
 
 .d-none {
-  display: none;
+  display: flex;
 }
 
 @media only screen and (width >= 300px) {
