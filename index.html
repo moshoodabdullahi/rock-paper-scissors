@@ -19,24 +19,24 @@
           <h4>Score</h4>
           <br />
           <p id="score">
-            PLAYER -
+            PLAYER
             <span class="header-score" id="player-score-element">0</span>
           </p>
           <p class="header-score">
-            COMPUTER -
+            COMPUTER
             <span class="header-score" id="computer-score-element">0</span>
           </p>
         </div>
       </header>
 
-      <section class="play-game d-flex" id="play-game">
+      <section class="game-screen d-flex" id="game-screen-element">
         <button class="btn-circle btn-paper" id="paper-button" value="paper" type="button">
           <span class="wrapper"> <img src="./images/icon-paper.svg" alt="paper icon" /></span>
         </button>
-        <button class="btn-circle btn-scissors" id="Scissors-button" value="scissors" type="button">
+        <button class="btn-circle btn-scissors" id="scissors-button" value="scissors" type="button">
           <span class="wrapper"> <img src="./images/icon-scissors.svg" alt="Scissors icon" /></span>
         </button>
-        <button class="btn-circle btn-rock" 1d="rock-button" value="rock" type="button">
+        <button class="btn-circle btn-rock" id="rock-button" value="rock" type="button">
           <span class="wrapper"> <img src="./images/icon-rock.svg" alt="rock icon" /></span>
         </button>
       </section>
@@ -44,7 +44,7 @@
       <button class="btn-rules">Rules</button>
     </div>
 
-    <section class="game-result d-none" id="game-result">
+    <section class="result-screen d-none" id="result-screen-element">
       <div>
         <h2>Player Picked</h2>
         <button class="btn-circle btn-paper">
@@ -52,11 +52,8 @@
         </button>
       </div>
       <div class="text-container">
-        <p class="big-text">
-          You
-          <span id="win">win</span>
-        </p>
-        <button class="btn" id="reset">Play again</button>
+        <p class="big-text" id="game-outcome-element"></p>
+        <button class="btn" id="play-again-button" type="button">Play again</button>
       </div>
       <div>
         <h2>Computer Picked</h2>

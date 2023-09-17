@@ -66,7 +66,7 @@ h4 {
   color: hsl(230deg 25% 30%);
 }
 
-.play-game {
+.game-screen {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,7 @@ h4 {
   position: relative;
 }
 
-.play-game::before {
+.game-screen::before {
   background-image: url('./images/bg-triangle.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -161,14 +161,14 @@ h4 {
   text-transform: uppercase;
 }
 
-.game-result {
+.result-screen {
   justify-content: space-between;
   align-items: center;
   text-align: center;
   margin: 0 auto;
 }
 
-.game-result .btn-circle {
+.result-screen .btn-circle {
   margin: 30px;
   transform: scale(1.4);
 }
@@ -185,11 +185,11 @@ h4 {
 }
 
 .d-flex {
-  display: none;
+  display: flex;
 }
 
 .d-none {
-  display: flex;
+  display: none;
 }
 
 @media only screen and (width >= 300px) {
@@ -204,7 +204,7 @@ h4 {
     width: 85px;
   }
 
-  .game-result {
+  .result-screen {
     width: 70%;
     max-width: 70%;
   }
@@ -222,14 +222,22 @@ h4 {
     width: 90px;
   }
 
-  .game-result {
+  .result-screen {
     width: 95%;
     max-width: 95%;
   }
 
-  .game-result .btn-circle {
+  .result-screen .btn-circle {
     margin: 30px;
     transform: scale(1.4);
+  }
+
+  .game-screen::before {
+    position: absolute;
+    top: 21%;
+    left: 19%;
+    height: 67%;
+    width: 59%;
   }
 
   .text-container {
@@ -249,12 +257,12 @@ h4 {
     width: 120px;
   }
 
-  .game-result {
+  .result-screen {
     width: 75%;
     max-width: 75%;
   }
 
-  .game-result .btn-circle {
+  .result-screen .btn-circle {
     margin: 30px;
   }
 
@@ -275,12 +283,12 @@ h4 {
     width: 120px;
   }
 
-  .game-result {
+  .result-screen {
     width: 70%;
     max-width: 70%;
   }
 
-  .game-result .btn-circle {
+  .result-screen .btn-circle {
     margin: 30px;
   }
 
@@ -301,12 +309,12 @@ h4 {
     width: 120px;
   }
 
-  .game-result {
+  .result-screen {
     width: 60%;
     max-width: 60%;
   }
 
-  .game-result .btn-circle {
+  .result-screen .btn-circle {
     margin: 30px;
   }
 
@@ -330,12 +338,12 @@ h4 {
     width: 120px;
   }
 
-  .game-result {
+  .result-screen {
     width: 45%;
     max-width: 45%;
   }
 
-  .game-result .btn-circle {
+  .result-screen .btn-circle {
     margin: 30px;
   }
 
