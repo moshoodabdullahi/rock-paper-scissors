@@ -11,6 +11,11 @@ const resultScreenElement = document.querySelector('#result-screen-element');
 const playerScoreElement = document.querySelector('#player-score-element');
 const computerScoreElement = document.querySelector('#computer-score-element');
 
+const playerResultImage = document.querySelector('#player-result-image');
+const computerResultImage = document.querySelector('#computer-result-image');
+
+const gameOutcomeElement = document.querySelector('#game-outcome-element');
+
 const playAgainBtn = document.querySelector('#play-again-button');
 
 const getComputerChoice = () => {
@@ -22,29 +27,40 @@ const getComputerChoice = () => {
 const calculateGame = (computerSelection, playerSelection) => {
   if (computerSelection === 'rock' && playerSelection === 'paper') {
     console.log('You Win!');
+    gameOutcomeElement.textContent = 'You Win!';
     playerScore += 1;
   } else if (computerSelection === 'scissors' && playerSelection === 'rock') {
     console.log('You Win!');
+    gameOutcomeElement.textContent = 'You Win!';
     playerScore += 1;
   } else if (computerSelection === 'paper' && playerSelection === 'scissors') {
     console.log('You Win!');
+    gameOutcomeElement.textContent = 'You Win!';
     playerScore += 1;
   } else if (computerSelection === 'scissors' && playerSelection === 'paper') {
     console.log('You Lose!');
+    gameOutcomeElement.textContent = 'You Lose!';
     computerScore += 1;
   } else if (computerSelection === 'rock' && playerSelection === 'scissors') {
     console.log('You Lose!');
+    gameOutcomeElement.textContent = 'You Lose!';
     computerScore += 1;
   } else if (computerSelection === 'paper' && playerSelection === 'rock') {
     console.log('You Lose!');
+    gameOutcomeElement.textContent = 'You Lose!';
     computerScore += 1;
   } else {
     console.log('You Draw');
+    gameOutcomeElement.textContent = 'You Draw!';
   }
   console.info('Player:', playerScore);
   console.info('computer:', computerScore);
   playerScoreElement.textContent = playerScore;
   computerScoreElement.textContent = computerScore;
+};
+
+const generateSrcValue = (value) => {
+  return `./images/icon-${value}.svg`;
 };
 
 const playRound = (event) => {
@@ -57,6 +73,12 @@ const playRound = (event) => {
   calculateGame(computerSelection, playerSelection);
   gameScreenElement.classList.replace('d-flex', 'd-none');
   resultScreenElement.classList.replace('d-none', 'd-flex');
+  const playerSelectionSrcValue = generateSrcValue(playerSelection);
+  const computerSelectionSrcValue = generateSrcValue(computerSelection);
+  console.log(playerSelectionSrcValue);
+  console.log(computerSelectionSrcValue);
+  playerResultImage.setAttribute('src', playerSelectionSrcValue);
+  computerResultImage.setAttribute('src', computerSelectionSrcValue);
 };
 
 const playAgain = () => {
@@ -65,9 +87,7 @@ const playAgain = () => {
 };
 
 rockButton.addEventListener('click', playRound);
-
 paperButton.addEventListener('click', playRound);
-
 scissorsButton.addEventListener('click', playRound);
 
 playAgainBtn.addEventListener('click', playAgain);
