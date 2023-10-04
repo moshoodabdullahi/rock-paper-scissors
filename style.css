@@ -244,13 +244,13 @@ h4 {
 @media only screen and (width >= 300px) {
   .btn-circle {
     border: none;
-    height: 100px;
-    width: 100px;
+    height: 135px;
+    width: 135px;
   }
 
   .btn-circle .wrapper {
-    height: 85px;
-    width: 85px;
+    height: 100px;
+    width: 100px;
   }
 
   .result-screen {
@@ -269,13 +269,13 @@ h4 {
 @media only screen and (width >= 500px) {
   .btn-circle {
     border: none;
-    height: 110px;
-    width: 110px;
+    height: 140px;
+    width: 140px;
   }
 
   .btn-circle .wrapper {
-    height: 90px;
-    width: 90px;
+    height: 105px;
+    width: 105px;
   }
 
   .result-screen {

@@ -95,3 +95,18 @@ paperButton.addEventListener('click', playRound);
 scissorsButton.addEventListener('click', playRound);
 
 playAgainBtn.addEventListener('click', playAgain);
+
+const openRules = () => {
+  rulesButtonElement.classList.replace('d-block', 'd-none');
+  btnContainerElement.classList.replace('d-none', 'd-block');
+  console.log(openRules);
+};
+
+const closeRules = () => {
+  closeGameRulesElement.classList.replace('d-none', 'd-block');
+  btnContainerElement.classList.replace('d-block', 'd-none');
+  console.log(closeRules);
+};
+
+rulesButtonElement.addEventListener('click', openRules);
+closeGameRulesElement.addEventListener('click', closeRules);
