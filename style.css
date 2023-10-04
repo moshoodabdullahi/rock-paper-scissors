@@ -9,7 +9,7 @@ body {
   background-color: hsl(230deg 45% 20%);
   color: #fff;
   font-family: 'Barlow Semi Condensed', sans-serif;
-  min-height: 100vh;
+  height: calc(100vh - 60px);
 }
 
 .container {
