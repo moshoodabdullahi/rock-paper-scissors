@@ -18,6 +18,10 @@ const gameOutcomeElement = document.querySelector('#game-outcome-element');
 
 const playAgainBtn = document.querySelector('#play-again-button');
 
+const rulesButtonElement = document.querySelector('#rules-button-element');
+const btnContainerElement = document.querySelector('#btn-container-element');
+const closeGameRulesElement = document.querySelector('#close-game-rules-element');
+
 const getComputerChoice = () => {
   const choice = ['rock', 'paper', 'scissors'];
   const random = Math.floor(Math.random() * choice.length);

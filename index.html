@@ -41,31 +41,38 @@
         </button>
       </section>
 
-      <button class="btn-rules">Rules</button>
-    </div>
+      <button class="btn-rules d-block" id="rules-button-element">RULES</button>
+      <div class="btn-rules-container" id="btn-container-element">
+        <div class="btn-image">
+          <p class="game-rules">Rules</p>
+          <span class="rules-wrapper"><img src="./images/image-rules.svg" alt="Game Rules" /></span>
+          <p class="close-game-rules" id="close-game-rules-element">x</p>
+        </div>
+      </div>
 
-    <section class="result-screen d-none" id="result-screen-element">
-      <div>
-        <h2>Player Picked</h2>
-        <button class="btn-circle btn-paper">
-          <span class="wrapper">
-            <img id="player-result-image" src="./images/icon-paper.svg" alt="paper icon"
-          /></span>
-        </button>
-      </div>
-      <div class="text-container">
-        <p class="big-text" id="game-outcome-element"></p>
-        <button class="btn" id="play-again-button" type="button">Play again</button>
-      </div>
-      <div>
-        <h2>Computer Picked</h2>
-        <button class="btn-circle btn-rock">
-          <span class="wrapper">
-            <img id="computer-result-image" src="./images/icon-rock.svg" alt="rock icon"
-          /></span>
-        </button>
-      </div>
-    </section>
+      <section class="result-screen d-none" id="result-screen-element">
+        <div>
+          <h2>Player Picked</h2>
+          <button class="btn-circle btn-paper">
+            <span class="wrapper">
+              <img id="player-result-image" src="./images/icon-paper.svg" alt="paper icon"
+            /></span>
+          </button>
+        </div>
+        <div class="text-container">
+          <p class="big-text" id="game-outcome-element"></p>
+          <button class="btn" id="play-again-button" type="button">Play again</button>
+        </div>
+        <div>
+          <h2>Computer Picked</h2>
+          <button class="btn-circle btn-rock">
+            <span class="wrapper">
+              <img id="computer-result-image" src="./images/icon-rock.svg" alt="rock icon"
+            /></span>
+          </button>
+        </div>
+      </section>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
