@@ -30,31 +30,24 @@ const getComputerChoice = () => {
 
 const calculateGame = (computerSelection, playerSelection) => {
   if (computerSelection === 'rock' && playerSelection === 'paper') {
-    console.log('You Win!');
     gameOutcomeElement.textContent = 'You Win!';
     playerScore += 1;
   } else if (computerSelection === 'scissors' && playerSelection === 'rock') {
-    console.log('You Win!');
     gameOutcomeElement.textContent = 'You Win!';
     playerScore += 1;
   } else if (computerSelection === 'paper' && playerSelection === 'scissors') {
-    console.log('You Win!');
     gameOutcomeElement.textContent = 'You Win!';
     playerScore += 1;
   } else if (computerSelection === 'scissors' && playerSelection === 'paper') {
-    console.log('You Lose!');
     gameOutcomeElement.textContent = 'You Lose!';
     computerScore += 1;
   } else if (computerSelection === 'rock' && playerSelection === 'scissors') {
-    console.log('You Lose!');
     gameOutcomeElement.textContent = 'You Lose!';
     computerScore += 1;
   } else if (computerSelection === 'paper' && playerSelection === 'rock') {
-    console.log('You Lose!');
     gameOutcomeElement.textContent = 'You Lose!';
     computerScore += 1;
   } else {
-    console.log('You Draw');
     gameOutcomeElement.textContent = 'You Draw!';
   }
   console.info('Player:', playerScore);
@@ -99,13 +92,11 @@ playAgainBtn.addEventListener('click', playAgain);
 const openRules = () => {
   rulesButtonElement.classList.replace('d-block', 'd-none');
   btnContainerElement.classList.replace('d-none', 'd-block');
-  console.log(openRules);
 };
 
 const closeRules = () => {
   closeGameRulesElement.classList.replace('d-none', 'd-block');
   btnContainerElement.classList.replace('d-block', 'd-none');
-  console.log(closeRules);
 };
 
 rulesButtonElement.addEventListener('click', openRules);
