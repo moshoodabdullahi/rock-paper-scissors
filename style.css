@@ -70,8 +70,8 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 350px;
-  width: 400px;
+  height: 280px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -286,6 +286,11 @@ h4 {
   .result-screen .btn-circle {
     margin: 30px;
     transform: scale(1.4);
+  }
+
+  .game-screen {
+    width: 400px;
+    height: 350px;
   }
 
   .game-screen::before {
