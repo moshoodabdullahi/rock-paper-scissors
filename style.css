@@ -1,4 +1,5 @@
 /* stylelint-disable prettier/prettier */
+/* stylelint-disable media-feature-range-notation */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;600;700&display=swap');
 
 * {
@@ -25,7 +26,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  margin: 50px 0;
+  margin: 50px 0 15px;
 }
 
 h1 {
@@ -70,8 +71,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 280px;
-  width: 100%;
+  max-width: 420px;
   margin: 0 auto;
   position: relative;
 }
@@ -82,10 +82,10 @@ h4 {
   background-size: cover;
   content: '';
   position: absolute;
-  top: 20%;
-  left: 15%;
-  height: 70%;
-  width: 70%;
+  top: 30%;
+  left: 32%;
+  height: 30%;
+  width: 40%;
   z-index: -1;
 }
 
@@ -119,8 +119,8 @@ h4 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 90px;
-  width: 90px;
+  height: 70%;
+  width: 70%;
 }
 
 .btn-paper {
@@ -140,9 +140,9 @@ h4 {
   border-radius: 10px;
   background-color: #fff;
   color: hsl(229deg 25% 31%);
-  font-size: 16px;
+  font-size: 20px;
   font-family: inherit;
-  padding: 10px 25px;
+  padding: 10px 70px;
   text-transform: uppercase;
 }
 
@@ -151,22 +151,25 @@ h4 {
   align-items: center;
   text-align: center;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .result-screen .btn-circle {
-  margin: 30px;
-  transform: scale(1.4);
+  margin: 0;
 }
 
 .big-text {
-  font-size: 18px;
-  margin: 0 0 20px;
+  margin: 65px 0 20px;
   line-height: 0.8;
   text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bolder;
 }
 
 .text-container {
   padding: 12px;
+  order: 1;
+  margin: auto;
 }
 
 .btn-rules {
@@ -241,53 +244,7 @@ h4 {
   display: flex;
 }
 
-@media only screen and (width >= 300px) {
-  .btn-circle {
-    border: none;
-    height: 100px;
-    width: 100px;
-  }
-
-  .btn-circle .wrapper {
-    height: 80px;
-    width: 80px;
-  }
-
-  .result-screen {
-    width: auto;
-    margin: auto;
-  }
-
-  .game-screen::before {
-    top: 25%;
-    left: 25%;
-    height: 52%;
-    width: 45%;
-  }
-}
-
-@media only screen and (width >= 500px) {
-  .btn-circle {
-    border: none;
-    height: 140px;
-    width: 140px;
-  }
-
-  .btn-circle .wrapper {
-    height: 105px;
-    width: 105px;
-  }
-
-  .result-screen {
-    width: auto;
-    margin: 45px;
-  }
-
-  .result-screen .btn-circle {
-    margin: 30px;
-    transform: scale(1.4);
-  }
-
+@media (min-width: 640px) {
   .game-screen {
     width: 400px;
     height: 350px;
@@ -301,12 +258,6 @@ h4 {
     width: 55%;
   }
 
-  .text-container {
-    padding: 12px;
-  }
-}
-
-@media only screen and (width >= 768px) {
   .btn-circle {
     border: none;
     height: 150px;
@@ -333,35 +284,7 @@ h4 {
   }
 }
 
-@media only screen and (width >= 992px) {
-  .btn-circle {
-    border: none;
-    height: 150px;
-    width: 150px;
-  }
-
-  .btn-circle .wrapper {
-    height: 120px;
-    width: 120px;
-  }
-
-  .result-screen {
-    width: auto;
-    margin: auto;
-  }
-
-  .result-screen .btn-circle {
-    margin: 30px;
-  }
-
-  .text-container {
-    padding: 12px;
-  }
-
-  .btn-rules-container {
-    background: rgb(0 0 0 / 50%);
-  }
-
+@media (min-width: 1280px) {
   .btn-image {
     width: 370px;
     height: 50vh;
@@ -383,35 +306,12 @@ h4 {
   .rules-wrapper {
     margin-top: 20px;
   }
-}
 
-@media only screen and (width >= 1200px) {
-  .btn-circle {
-    border: none;
-    height: 150px;
-    width: 150px;
+  .btn {
+    padding: 15px 70px;
+    text-transform: uppercase;
   }
 
-  .btn-circle .wrapper {
-    height: 120px;
-    width: 120px;
-  }
-
-  .result-screen {
-    width: auto;
-    margin: auto;
-  }
-
-  .result-screen .btn-circle {
-    margin: 30px;
-  }
-
-  .text-container {
-    padding: 12px;
-  }
-}
-
-@media only screen and (width >= 1400px) {
   .btn-circle {
     border: none;
     height: 150px;
@@ -429,13 +329,27 @@ h4 {
   .result-screen {
     width: auto;
     margin: auto;
+    flex-wrap: nowrap;
   }
 
   .result-screen .btn-circle {
-    margin: 30px;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+  }
+
+  .result-screen .btn-circle .wrapper {
+    height: 160px;
+    width: 160px;
   }
 
   .text-container {
     padding: 12px;
+    order: 0;
+  }
+
+  .big-text {
+    font-size: 30px;
+    font-weight: bolder;
   }
 }
