@@ -119,8 +119,8 @@ h4 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 80%;
-  width: 80%;
+  height: 80px;
+  width: 80px;
 }
 
 .btn-paper {
@@ -179,9 +179,9 @@ h4 {
   color: #fff;
   font-size: 20px;
   font-family: inherit;
-  padding: 10px 25px;
-  position: fixed;
-  bottom: 30px;
+  padding: 6px 22px;
+  position: absolute;
+  bottom: 20px;
   right: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -308,7 +308,7 @@ h4 {
   }
 
   .btn {
-    padding: 15px 70px;
+    padding: 10px 50px;
     text-transform: uppercase;
   }
 
