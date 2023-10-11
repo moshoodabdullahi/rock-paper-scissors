@@ -180,20 +180,6 @@ h4 {
   justify-content: center;
 }
 
-/* border: 2px solid #fff;
-border-radius: 10px;
-background-color: transparent;
-color: #fff;
-font-size: 20px;
-font-family: inherit;
-padding: 6px 22px;
-position: absolute;
-bottom: 20px;
-right: 30px;
-letter-spacing: 2px;
-text-transform: uppercase;
-cursor: pointer; */
-
 .btn-rules {
   font-size: 20px;
   background-color: transparent;
@@ -233,12 +219,12 @@ cursor: pointer; */
 
 .game-rules {
   color: #1e3b63;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: -1px;
-  margin-top: 95px;
+  margin-top: 45px;
 }
 
 .close-game-rules {
@@ -247,7 +233,7 @@ cursor: pointer; */
   text-align: center;
   opacity: 0.4;
   cursor: pointer;
-  margin: 100px 0;
+  margin: 50px 0;
 }
 
 .d-flex {
