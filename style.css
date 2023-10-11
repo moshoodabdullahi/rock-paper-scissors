@@ -84,7 +84,7 @@ h4 {
   position: absolute;
   top: 30%;
   left: 32%;
-  height: 30%;
+  height: 38%;
   width: 40%;
   z-index: -1;
 }
@@ -174,20 +174,36 @@ h4 {
   margin: auto;
 }
 
+.button-rules {
+  display: flex;
+  padding-right: 5px;
+  justify-content: center;
+}
+
+/* border: 2px solid #fff;
+border-radius: 10px;
+background-color: transparent;
+color: #fff;
+font-size: 20px;
+font-family: inherit;
+padding: 6px 22px;
+position: absolute;
+bottom: 20px;
+right: 30px;
+letter-spacing: 2px;
+text-transform: uppercase;
+cursor: pointer; */
+
 .btn-rules {
-  border: 2px solid #fff;
-  border-radius: 10px;
-  background-color: transparent;
-  color: #fff;
   font-size: 20px;
-  font-family: inherit;
-  padding: 6px 22px;
+  background-color: transparent;
+  padding: 4px 35px;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 15px;
   position: absolute;
   bottom: 20px;
-  right: 30px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  cursor: pointer;
 }
 
 .btn-rules-container {
@@ -212,12 +228,12 @@ h4 {
 .rules-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 140px;
+  margin-top: 0;
 }
 
 .game-rules {
   color: #1e3b63;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -231,7 +247,7 @@ h4 {
   text-align: center;
   opacity: 0.4;
   cursor: pointer;
-  margin: 130px 210px;
+  margin: 100px 0;
 }
 
 .d-flex {
@@ -291,7 +307,7 @@ h4 {
 @media (min-width: 1280px) {
   .btn-image {
     width: 370px;
-    height: 50vh;
+    height: 62vh;
     border-radius: 10px;
   }
 
@@ -355,5 +371,9 @@ h4 {
   .big-text {
     font-size: 27px;
     font-weight: bolder;
+  }
+
+  .btn-rules {
+    right: 30px;
   }
 }

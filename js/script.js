@@ -22,6 +22,9 @@ const rulesButtonElement = document.querySelector('#rules-button-element');
 const btnContainerElement = document.querySelector('#btn-container-element');
 const closeGameRulesElement = document.querySelector('#close-game-rules-element');
 
+const btnPlayerColorElement = document.querySelector('#btn-player-color-element');
+const btnComputerColorElement = document.querySelector('#btn-computer-color-element');
+
 const getComputerChoice = () => {
   const choice = ['rock', 'paper', 'scissors'];
   const random = Math.floor(Math.random() * choice.length);
