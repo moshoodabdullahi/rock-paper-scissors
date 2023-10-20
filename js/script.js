@@ -83,7 +83,6 @@ const playRound = (event) => {
   console.log(computerSelectionSrcValue);
   playerResultImage.setAttribute('src', playerSelectionSrcValue);
   computerResultImage.setAttribute('src', computerSelectionSrcValue);
-
   const playerSelectionCircleClass = generateCircleClass(playerSelection);
   const computerSelectionCircleClass = generateCircleClass(computerSelection);
   console.log(playerSelectionCircleClass);
