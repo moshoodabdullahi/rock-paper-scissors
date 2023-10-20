@@ -22,8 +22,8 @@ const rulesButtonElement = document.querySelector('#rules-button-element');
 const btnContainerElement = document.querySelector('#btn-container-element');
 const closeGameRulesElement = document.querySelector('#close-game-rules-element');
 
-const btnPlayerColorElement = document.querySelector('#btn-player-color-element');
-const btnComputerColorElement = document.querySelector('#btn-computer-color-element');
+const playerChoiceButton = document.querySelector('#player-choice');
+const computerChoiceButton = document.querySelector('#computer-choice');
 
 const getComputerChoice = () => {
   const choice = ['rock', 'paper', 'scissors'];
@@ -63,6 +63,10 @@ const generateSrcValue = (value) => {
   return `./images/icon-${value}.svg`;
 };
 
+const generateCircleClass = (value) => {
+  return `btn-circle btn-${value}`;
+};
+
 const playRound = (event) => {
   const { value } = event.currentTarget;
   console.log(value);
@@ -79,6 +83,13 @@ const playRound = (event) => {
   console.log(computerSelectionSrcValue);
   playerResultImage.setAttribute('src', playerSelectionSrcValue);
   computerResultImage.setAttribute('src', computerSelectionSrcValue);
+
+  const playerSelectionCircleClass = generateCircleClass(playerSelection);
+  const computerSelectionCircleClass = generateCircleClass(computerSelection);
+  console.log(playerSelectionCircleClass);
+  console.log(computerSelectionCircleClass);
+  playerChoiceButton.setAttribute('class', playerSelectionCircleClass);
+  computerChoiceButton.setAttribute('class', computerSelectionCircleClass);
 };
 
 const playAgain = () => {
