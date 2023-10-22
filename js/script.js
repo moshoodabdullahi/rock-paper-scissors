@@ -79,14 +79,10 @@ const playRound = (event) => {
   resultScreenElement.classList.replace('d-none', 'd-flex');
   const playerSelectionSrcValue = generateSrcValue(playerSelection);
   const computerSelectionSrcValue = generateSrcValue(computerSelection);
-  console.log(playerSelectionSrcValue);
-  console.log(computerSelectionSrcValue);
   playerResultImage.setAttribute('src', playerSelectionSrcValue);
   computerResultImage.setAttribute('src', computerSelectionSrcValue);
   const playerSelectionCircleClass = generateCircleClass(playerSelection);
   const computerSelectionCircleClass = generateCircleClass(computerSelection);
-  console.log(playerSelectionCircleClass);
-  console.log(computerSelectionCircleClass);
   playerChoiceButton.setAttribute('class', playerSelectionCircleClass);
   computerChoiceButton.setAttribute('class', computerSelectionCircleClass);
 };
