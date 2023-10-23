@@ -67,7 +67,6 @@ const generateCircleClass = (value) => {
 
 const playRound = (event) => {
   const { value } = event.currentTarget;
-  console.log(value);
   const playerSelection = event.currentTarget.value;
   const computerSelection = getComputerChoice();
   calculateGame(computerSelection, playerSelection);

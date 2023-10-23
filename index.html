@@ -10,21 +10,20 @@
   <body>
     <div class="container">
       <header>
-        <h1>
+        <h1 class="game-name">
           <span>Rock</span>
           <span>Paper</span>
           <span>Scissors</span>
         </h1>
         <div class="score-container">
-          <h4>Score</h4>
-          <br />
-          <p id="score">
+          <h2 class="score-header">Score</h2>
+          <p class="score-container-paragraph" id="score">
             PLAYER
-            <span class="header-score" id="player-score-element">0</span>
+            <span id="player-score-element">0</span>
           </p>
-          <p class="header-score">
+          <p class="score-container-paragraph">
             COMPUTER
-            <span class="header-score" id="computer-score-element">0</span>
+            <span id="computer-score-element">0</span>
           </p>
         </div>
       </header>
@@ -54,8 +53,8 @@
 
       <section class="result-screen d-none" id="result-screen-element">
         <div class="player-result-container button">
-          <h2>Player Pick</h2>
-          <button id="player-choice" class="btn-circle btn-paper">
+          <h4 class="player-pick">Player Pick</h4>
+          <button id="player-choice" class="result-btn-circle btn-circle btn-paper">
             <div class="wrapper">
               <img id="player-result-image" src="./images/icon-paper.svg" alt="paper icon" />
             </div>
@@ -66,8 +65,8 @@
           <button class="btn" id="play-again-button" type="button">Play again</button>
         </div>
         <div class="computer-result-container button">
-          <h2>Computer Pick</h2>
-          <button id="computer-choice" class="btn-circle btn-rock">
+          <h4 class="computer-pick">Computer Pick</h4>
+          <button id="computer-choice" class="result-btn-circle btn-circle btn-rock">
             <div class="wrapper">
               <img id="computer-result-image" src="./images/icon-rock.svg" alt="rock icon" />
             </div>

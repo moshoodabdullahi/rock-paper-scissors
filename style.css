@@ -4,10 +4,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #fff;
+  --game-rules-color: #1e3b63;
+  --btn-color: hsl(229deg 25% 31%);
+  --score-header-color: hsl(229deg 64% 46%);
+  --header-score-color: hsl(230deg 25% 30%);
+  --header-border-color: hsl(217deg 16% 45%);
+  --body-background-color: hsl(230deg 45% 20%);
+  --score-container-color: hsl(229deg 25% 31%);
+  --btn-circle-box-shadow-color: rgba(0 0 0 15%);
+  --body-font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
 body {
-  background-color: hsl(230deg 45% 20%);
-  color: #fff;
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: var(--body-background-color);
+  color: var(--primary-color);
+  font-family: var(--body-font-family);
   height: calc(100vh - 60px);
 }
 
@@ -18,7 +31,7 @@ body {
 }
 
 header {
-  border: 3px solid hsl(217deg 16% 45%);
+  border: 3px solid var(--header-border-color);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -27,7 +40,7 @@ header {
   margin: 50px 0 15px;
 }
 
-h1 {
+.game-name {
   font-size: 2rem;
   margin: 0;
   display: flex;
@@ -36,33 +49,30 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
+.player-pick,
+.computer-pick {
   text-transform: uppercase;
 }
 
-h4 {
-  color: hsl(229deg 64% 46%);
+.score-header {
+  color: var(--score-header-color);
   margin-top: 0;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
 
 .score-container {
-  background-color: #fff;
+  background-color: var(--primary-color);
   border-radius: 10px;
   padding: 1px 6px;
   text-align: center;
 }
 
 .score-container p {
-  color: hsl(229deg 25% 31%);
+  color: var(--score-container-color);
   font-size: 15px;
   font-weight: bolder;
   margin: 0;
-}
-
-.header-score {
-  color: hsl(230deg 25% 30%);
 }
 
 .game-screen {
@@ -87,10 +97,21 @@ h4 {
   z-index: -1;
 }
 
+.btn {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: var(--btn-color);
+  font-size: 15px;
+  font-family: inherit;
+  padding: 6px 30px;
+  text-transform: uppercase;
+}
+
 .btn-circle {
   border: none;
   border-radius: 50%;
-  box-shadow: inset 0 -5px rgba(0 0 0 15%);
+  box-shadow: inset 0 -5px var(--btn-circle-box-shadow-color);
   margin: 0 25px;
   height: 102px;
   width: 102px;
@@ -106,14 +127,14 @@ h4 {
 
 .btn-circle:hover {
   cursor: pointer;
-  transition-duration: 1s;
+  transition-duration: 0.4s;
   transform: scale(1.2);
 }
 
-.btn-circle .wrapper {
-  background-color: #fff;
+.wrapper {
+  background-color: var(--primary-color);
   border-radius: 50%;
-  box-shadow: inset 0 5px rgba(0 0 0 15%);
+  box-shadow: inset 0 5px var(--btn-circle-box-shadow-color);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -131,17 +152,6 @@ h4 {
 
 .btn-rock {
   background: linear-gradient(to bottom, hsl(349deg 71% 52%), hsl(349deg 70% 56%));
-}
-
-.btn {
-  border: 2px solid #fff;
-  border-radius: 10px;
-  background-color: #fff;
-  color: hsl(229deg 25% 31%);
-  font-size: 15px;
-  font-family: inherit;
-  padding: 6px 30px;
-  text-transform: uppercase;
 }
 
 .result-screen {
@@ -182,8 +192,8 @@ h4 {
   font-size: 20px;
   background-color: transparent;
   padding: 4px 35px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
   border-radius: 10px;
   margin-top: 15px;
   position: absolute;
@@ -202,7 +212,7 @@ h4 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  background-color: #fff;
+  background-color: var(--primary-color);
   width: 100%;
   height: 100vh;
   inset: 0;
@@ -216,7 +226,7 @@ h4 {
 }
 
 .game-rules {
-  color: #1e3b63;
+  color: var(--game-rules-color);
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -226,7 +236,7 @@ h4 {
 }
 
 .close-game-rules {
-  color: #1e3b63;
+  color: var(--game-rules-color);
   font-size: 26px;
   text-align: center;
   opacity: 0.4;
