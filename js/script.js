@@ -53,8 +53,6 @@ const calculateGame = (computerSelection, playerSelection) => {
   } else {
     gameOutcomeElement.textContent = 'You Draw!';
   }
-  console.info('Player:', playerScore);
-  console.info('computer:', computerScore);
   playerScoreElement.textContent = playerScore;
   computerScoreElement.textContent = computerScore;
 };
@@ -72,8 +70,6 @@ const playRound = (event) => {
   console.log(value);
   const playerSelection = event.currentTarget.value;
   const computerSelection = getComputerChoice();
-  console.info('Player Chooses:', playerSelection);
-  console.info('Computer Chooses:', computerSelection);
   calculateGame(computerSelection, playerSelection);
   gameScreenElement.classList.replace('d-flex', 'd-none');
   resultScreenElement.classList.replace('d-none', 'd-flex');

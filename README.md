@@ -19,7 +19,7 @@
 - Clone the project
 
 ```bash
-git clone https://github.com/user/rock-paper-scissors.git
+git clone https://github.com/moshoodabdullahi/rock-paper-scissors.git
 
 ```
 

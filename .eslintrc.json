@@ -10,6 +10,8 @@
   },
   "extends": ["airbnb-base", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
-  "rules": {},
+  "rules": {
+    "no-console": "warn"
+  },
   "ignorePatterns": ["dist/", "build/", "axe-check.js"]
 }

@@ -1,5 +1,3 @@
-/* stylelint-disable prettier/prettier */
-/* stylelint-disable media-feature-range-notation */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;600;700&display=swap');
 
 * {
@@ -259,7 +257,7 @@ h4 {
   display: flex;
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .game-rules {
     margin-bottom: 90px;
   }
@@ -320,7 +318,7 @@ h4 {
   }
 }
 
-@media (min-width: 1280px) {
+@media (width >= 1280px) {
   .player-result-container {
     display: flex;
     flex-direction: column;
