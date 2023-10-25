@@ -1,25 +1,25 @@
-# Project Name
+# ROCK PAPER SCISSORS
 
-> One paragraph statement about the project.
+> A Rock Paper Scissors project built using Math.random, Math.floor, eventListerner, if...else statement.
 
 ![screenshot](./app_screenshot.png)
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- CSS,
+- HTML,
+- JavaScript.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://abdullahi-rock-paper-scissors.netlify.app/)
 
 ### Development (Running locally)
 
 - Clone the project
 
 ```bash
-git clone https://github.com/user/js-template.git
+git clone https://github.com/moshoodabdullahi/rock-paper-scissors.git
 
 ```
 
@@ -102,9 +102,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration, resources/assets used
-- etc
+- [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
 
 ## 📝 License
 

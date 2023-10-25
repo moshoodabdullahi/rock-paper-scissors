@@ -2,12 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>Document</title>
+    <title>Abdullahi Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <script src="js/index.js"></script>
+    <div class="container">
+      <header>
+        <h1 class="game-name">
+          <span>Rock</span>
+          <span>Paper</span>
+          <span>Scissors</span>
+        </h1>
+        <div class="score-container">
+          <h2 class="score-header">Score</h2>
+          <p class="score-container-paragraph" id="score">
+            PLAYER
+            <span id="player-score-element">0</span>
+          </p>
+          <p class="score-container-paragraph">
+            COMPUTER
+            <span id="computer-score-element">0</span>
+          </p>
+        </div>
+      </header>
+
+      <section class="game-screen d-flex" id="game-screen-element">
+        <button class="btn-circle btn-paper" id="paper-button" value="paper" type="button">
+          <div class="wrapper"><img src="./images/icon-paper.svg" alt="paper icon" /></div>
+        </button>
+        <button class="btn-circle btn-scissors" id="scissors-button" value="scissors" type="button">
+          <div class="wrapper"><img src="./images/icon-scissors.svg" alt="Scissors icon" /></div>
+        </button>
+        <button class="btn-circle btn-rock" id="rock-button" value="rock" type="button">
+          <div class="wrapper"><img src="./images/icon-rock.svg" alt="rock icon" /></div>
+        </button>
+      </section>
+
+      <div class="button-rules">
+        <button class="btn-rules" id="rules-button-element">RULES</button>
+      </div>
+      <div class="btn-rules-container d-none" id="btn-container-element">
+        <div class="btn-image">
+          <p class="game-rules">Rules</p>
+          <span class="rules-wrapper"><img src="./images/image-rules.svg" alt="Game Rules" /></span>
+          <p class="close-game-rules" id="close-game-rules-element">x</p>
+        </div>
+      </div>
+
+      <section class="result-screen d-none" id="result-screen-element">
+        <div class="player-result-container button">
+          <h3 class="player-pick">Player Pick</h3>
+          <button id="player-choice" class="btn-circle btn-paper result-btn-circle">
+            <div class="wrapper result-wrapper">
+              <img id="player-result-image" src="./images/icon-paper.svg" alt="paper icon" />
+            </div>
+          </button>
+        </div>
+        <div class="text-container">
+          <p class="big-text" id="game-outcome-element"></p>
+          <button class="btn" id="play-again-button" type="button">Play again</button>
+        </div>
+        <div class="computer-result-container button">
+          <h3 class="computer-pick">Computer Pick</h3>
+          <button id="computer-choice" class="btn-circle btn-rock result-btn-circle">
+            <div class="wrapper result-wrapper">
+              <img id="computer-result-image" src="./images/icon-rock.svg" alt="rock icon" />
+            </div>
+          </button>
+        </div>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
